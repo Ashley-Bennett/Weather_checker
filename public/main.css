@@ -9,6 +9,7 @@ html {
     text-align: center;
     margin-right: 500px;
     margin-left: 150px;
+    min-height: calc(100vh - 100px)
 }
 
 h1 {
@@ -16,8 +17,7 @@ h1 {
     font-size: 3rem;
 }
 
-form {
-}
+
 
 input {
     border: none;
@@ -30,14 +30,12 @@ input {
     padding-left: 60px;
     margin-left: 20px;
     transition: 200ms ease-in-out;
-
 }
 
 input:focus {
     border-bottom: 2px solid #22226B;
     outline: none;
     color: #22226B;
-
 }
 
 button {
@@ -63,7 +61,7 @@ button:active {
     transform: scale(1.1)
 }
 
-button:focus{
+button:focus {
     outline: none;
 }
 
@@ -75,13 +73,28 @@ button:focus{
     font-size: 1.8rem;
 }
 
-@media (max-width: 600px){
+.signage {
+    text-align: center;
+}
+
+a:link{
+    color: inherit;
+}
+
+a:visited{
+    color: inherit;
+}
+
+@media (max-width: 600px) {
     html {
         background-size: 150%;
     }
 
-    .main{
+    .main {
         margin: auto;
     }
-}
 
+    button {
+        margin: 20px 2px;
+    }
+}
