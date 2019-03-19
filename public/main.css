@@ -7,7 +7,6 @@ html {
 
 .main {
     text-align: center;
-
     margin-right: 500px;
     margin-left: 150px;
 }
@@ -17,13 +16,14 @@ h1 {
     font-size: 3rem;
 }
 
-form {}
+form {
+}
 
 input {
     border: none;
     border-bottom: 2px solid gray;
     background: none;
-    width: 40%;
+    width: 300px;
     font-size: 2rem;
     background-image: url(./search-location-solid.svg);
     background-repeat: no-repeat;
@@ -50,7 +50,6 @@ button {
     display: inline-block;
     font-size: 1.6rem;
     margin: 50px 2px;
-    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -75,3 +74,14 @@ button:focus{
 #two {
     font-size: 1.8rem;
 }
+
+@media (max-width: 600px){
+    html {
+        background-size: 150%;
+    }
+
+    .main{
+        margin: auto;
+    }
+}
+
