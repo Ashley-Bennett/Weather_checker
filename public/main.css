@@ -7,40 +7,58 @@ html {
 
 .main {
     text-align: center;
-    
+
     margin-right: 500px;
-    margin-left: 200px;
+    margin-left: 150px;
 }
 
-h1{
+h1 {
     padding: 50px;
+    font-size: 3rem;
 }
 
-form {
-    
-}
+form {}
 
 input {
-    /* padding: 20px; */
     border: none;
     border-bottom: 2px solid gray;
     background: none;
-    width: 30%;
+    width: 40%;
     font-size: 2rem;
+    background-image: url(./search-location-solid.svg);
+    background-repeat: no-repeat;
+    padding-left: 60px;
+    margin-left: 20px;
+    transition: 200ms ease-in-out;
+
 }
 
-input:focus{
-    border-bottom: 2px solid #323377;
+input:focus {
+    border-bottom: 2px solid #22226B;
+    outline: none;
+    color: #22226B;
+
 }
 
 button {
-    margin: 20px;
+    background-color: #22226B;
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    margin: 50px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
-#one{
-    
+#one {
+    font-size: 1.8rem;
 }
 
-#two{
-    
+#two {
+    font-size: 1.8rem;
 }
