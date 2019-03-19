@@ -55,6 +55,19 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    transform: scale(1.2)
+}
+
+button:active {
+    outline: none;
+    transform: scale(1.1)
+}
+
+button:focus{
+    outline: none;
+}
+
 #one {
     font-size: 1.8rem;
 }

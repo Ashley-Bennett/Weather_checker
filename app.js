@@ -10,11 +10,6 @@ const publicDirectory = path.join(__dirname, "./public")
 app.use(express.static(publicDirectory))
 
 
-const me = {
-    Name: "Ash",
-    Age: 23
-}
-
 
 app.get("/weather", (req, res) => {
     if (!req.query.address) {
@@ -23,12 +18,16 @@ app.get("/weather", (req, res) => {
 
     geocode(req.query.address, (error, response) => {
         if (error) {
-            return console.log(error)
+            return res.send({
+                error: error,
+            })
         }
 
         forecast(response.latitude, response.longitude, (error, forecastData) => {
             if (error) {
-                return console.log(error)
+                res.send({
+                    error: error,
+                })
             }
 
             res.send({
@@ -39,18 +38,6 @@ app.get("/weather", (req, res) => {
         })
     })
 })
-
-app.get("/about", (req, res) => {
-    console.log(req.query.location)
-    res.send(me)
-})
-
-app.get("/linkedin", (req, res) => {
-    res.send("<h1> <a href=https://www.linkedin.com/in/ashley-bennett-7a5296180/> Link</a></h1>")
-})
-
-
-// console.log(__dirname)
 
 app.listen(port, () => {
     console.log(`Listening on ${port}`)

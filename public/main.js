@@ -5,9 +5,9 @@ const messageTwo = document.getElementById('two');
 
 submitButton.addEventListener('click', (e) => {
     e.preventDefault();
-   
+
     let location = input.value;
-    
+
     messageOne.textContent = 'Loading...'
     messageTwo.textContent = ''
 
