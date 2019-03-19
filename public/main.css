@@ -1,0 +1,46 @@
+html {
+    background: url(./cool-background.svg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.main {
+    text-align: center;
+    
+    margin-right: 500px;
+    margin-left: 200px;
+}
+
+h1{
+    padding: 50px;
+}
+
+form {
+    
+}
+
+input {
+    /* padding: 20px; */
+    border: none;
+    border-bottom: 2px solid gray;
+    background: none;
+    width: 30%;
+    font-size: 2rem;
+}
+
+input:focus{
+    border-bottom: 2px solid #323377;
+}
+
+button {
+    margin: 20px;
+}
+
+#one{
+    
+}
+
+#two{
+    
+}
